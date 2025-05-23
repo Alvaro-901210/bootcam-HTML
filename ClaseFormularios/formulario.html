@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <h1>Registro Gimnasio</h1>
+    <hr />
+    <form action="" method="post">
+      <label for="nombre">Nombres:</label>
+      <input type="text" id="nombre" name="nombre" required /><br />
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" required /><br />
+
+      <label for="cedula">Cédula:</label>
+      <input type="number" id="cedula" name="cedula" required /><br />
+
+      <label for="nacimiento">Fecha de Nacimiento</label>
+      <input type="date" id="nacimiento" name="nacimiento" /><br />
+
+      <label for="genero">Género</label><br />
+      <select name="genero" id="genero">
+        <option value="masculino" selected>Masculino</option>
+        <option value="fememenino">Femenino</option>
+        <option value="otro">Otro</option>
+      </select>
+      <br />
+
+      <label for="genero">Nivel de Experiencia</label><br />
+      <select name="nivel" id="nivel">
+        <option value="principiante" selected>Principiante</option>
+        <option value="intermedio">Intermedio</option>
+        <option value="avanzado">Avanzado</option>
+        <option value="experto">Experto</option></select
+      ><br />
+
+      <fieldset>
+        <legend>Actividades que desea realizar</legend>
+        <input type="checkbox" id="crossfit" name="crossfit" value="crossfit" />
+        <label for="crossfit">Crossfit</label><br />
+        <input type="checkbox" id="maquinas" name="maquinas" value="maquinas" />
+        <label for="maquinas">Maquinas</label><br />
+        <input type="checkbox" id="baile" name="baile" value="baile" />
+        <label for="baile">Bailoterapia</label><br />
+      </fieldset>
+      <br />
+
+      <label for="foto">Foto</label>
+      <input type="file" id="foto" name="foto" /><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
