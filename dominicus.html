@@ -8,7 +8,7 @@
   </head>
   <body class="body-birds">
     <h1>Avistamiento de Colibries En Norte de Santander, Colombia</h1>
-    <a class="home" href="index.html">Inicio</a>
+    <button class="home" onclick="ingresar(event)">Inicio</button>
     <div class="card-bird">
       <div class="div-data">
         <h2 class="h2-bird">Mango Dominicano (dominicus)</h2>
@@ -32,5 +32,12 @@
         <img class="img-grill" src="img/dominicus4.png" alt="rubi 3" />
       </div>
     </div>
+    <div class="div-data"></div>
+      <h2 class="h2Puntuar">Califica este colibrí</h2> 
+      <span id="puntero" onclick="puntuar()">click aqui 𓅨</span> 
+      <div id="estrellas" ></div>
+      <p id="resultado"></p>
+    </div>
   </body>
+  <script src="main.js"></script>
 </html>

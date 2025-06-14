@@ -1,121 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Colibries Norte de Santander</title>
-    <link rel="stylesheet" href="styles_aves.css" />
-  </head>
-  <body>
-    <h1>Avistamiento de Colibries En Norte de Santander, Colombia</h1>
-    <div class="body-div">
-      <div class="card">
-        <h2 class="h2-card">Colibrí Rubí</h2>
-        <div class="photos">
-          <img class="img-card" src="img/rubi1.jpg" alt="rubi1" />
-        </div>
-        <h3 class="h3-card">Chrysolampis mosquitus</h3>
-        <a class="a-card" href="rubi.html">Ver Detalle</a>
-      </div>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles_aves.css">
+</head>
+<body class="bodyLogin"> 
+  <div>
+    <img src="/img/fondo.png" alt="fondoBody">
+  </div>
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form action="#" method="get">
+      <label for="username">Usuario</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" onkeyup="userValidate()">
 
-      <div class="card">
-        <h2 class="h2-card">Mango Jamaicano</h2>
-        <div class="photos">
-          <img class="img-card" src="img/jamaicano1.png" alt="jamaicano1" />
-        </div>
-        <h3 class="h3-card">Anthracothorax mango</h3>
-        <a class="a-card" href="jamaicano.html">Ver Detalle</a>
-      </div>
-
-      <div class="card">
-        <h2 class="h2-card">Mango Gorjinegro</h2>
-        <div class="photos">
-          <img class="img-card" src="img/gorjinegro1.png" alt="gorjinegro1" />
-        </div>
-        <h3 class="h3-card">Anthracothorax nigricollis</h3>
-        <a class="a-card" href="gorjinegro.html">Ver Detalle</a>
-      </div>
-
-      <div class="card">
-        <h2 class="h2-card">Mango Gorjiverde</h2>
-        <div class="photos">
-          <img class="img-card" src="img/gorjiverde1.png" alt="gorjiverde1" />
-        </div>
-        <h3 class="h3-card">Anthracothorax viridigula</h3>
-        <a class="a-card" href="gorjiverde.html">Ver Detalle</a>
-      </div>
-
-      <div class="card">
-        <h2 class="h2-card">Garganta Negra</h2>
-        <div class="photos">
-          <img class="img-card" src="img/gnegra1.png" alt="gnegra1" />
-        </div>
-        <h3 class="h3-card">Anthracothorax prevostii</h3>
-        <a class="a-card" href="gnegra.html">Ver Detalle</a>
-      </div>
-
-      <div class="card">
-        <h2 class="h2-card">Mango de Veragua</h2>
-        <div class="photos">
-          <img class="img-card" src="img/veragua1.png" alt="veragua1" />
-        </div>
-        <h3 class="h3-card">Anthracothorax veraguensis</h3>
-        <a class="a-card" href="veragua.html">Ver Detalle</a>
-      </div>
-
-      <div class="card">
-        <h2 class="h2-card">Mango Dominicano (Dominicus)</h2>
-        <div class="photos">
-          <img class="img-card" src="img/dominicus1.png" alt="dominicano1" />
-        </div>
-        <h3 class="h3-card">Anthracothorax dominicus</h3>
-        <a class="a-card" href="dominicus.html">Ver Detalle</a>
-      </div>
-
-      <div class="card">
-        <h2 class="h2-card">Mango Dominicano (aurulentus)</h2>
-        <div class="photos">
-          <img class="img-card" src="img/aurulentus1.png" alt="aurulentus1" />
-        </div>
-        <h3 class="h3-card">Anthracothorax aurulentus</h3>
-        <a class="a-card" href="aurulentus.html">Ver Detalle</a>
-      </div>
-
-      <div class="card">
-        <h2 class="h2-card">Colibrí Caribeño Gorjimorado</h2>
-        <div class="photos">
-          <img class="img-card" src="img/gorjimorado1.png" alt="gorjimorado1" />
-        </div>
-        <h3 class="h3-card">Eulampis jugularis</h3>
-        <a class="a-card" href="gorjimorado.html">Ver Detalle</a>
-      </div>
-
-      <div class="card">
-        <h2 class="h2-card">Colibrí de Marte</h2>
-        <div class="photos">
-          <img class="img-card" src="img/marte1.png" alt="marte1" />
-        </div>
-        <h3 class="h3-card">Heliangelus mavors</h3>
-        <a class="a-card" href="marte.html">Ver Detalle</a>
-      </div>
-
-      <div class="card">
-        <h2 class="h2-card">Colibrí Lucero</h2>
-        <div class="photos">
-          <img class="img-card" src="img/lucero1.png" alt="lucero1" />
-        </div>
-        <h3 class="h3-card">Heliangelus mavors</h3>
-        <a class="a-card" href="lucero.html">Ver Detalle</a>
-      </div>
-
-      <div class="card">
-        <h2 class="h2-card">Colibrí Violeta</h2>
-        <div class="photos">
-          <img class="img-card" src="img/violeta1.png" alt="violeta1" />
-        </div>
-        <h3 class="h3-card">Heliangelus viola</h3>
-        <a class="a-card" href="violeta.html">Ver Detalle</a>
-      </div>
-    </div>
-  </body>
+      <button id="loginbtn" onclick="ingresar(event)">Ingresar</button>
+    </form>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
 </html>
